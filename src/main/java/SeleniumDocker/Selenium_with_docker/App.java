@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -32,7 +33,7 @@ public class App
 		driver = new RemoteWebDriver(new URL(HOST_URL), opt);
 		driver.get(APP_URL);
 		System.out.println("Title is " + driver.getTitle());
-		Thread.sleep(1000000);
+		Thread.sleep(10000);
 	driver.quit();
 }
 }
